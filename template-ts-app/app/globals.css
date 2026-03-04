@@ -360,6 +360,16 @@ body {
     color: var(--text-muted);
     margin-top: 0.3rem;
     line-height: 1.4;
+    transition: all 0.25s ease;
+}
+
+.toggle-hint-active {
+    color: #d97706;
+    background: #fef3c7;
+    font-weight: 600;
+    padding: 0.4rem 0.6rem;
+    border-left: 3px solid #d97706;
+    border-radius: 4px;
 }
 
 /* ─── Form Elements ──────────────────────────────────────────────────── */

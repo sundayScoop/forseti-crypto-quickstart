@@ -753,7 +753,7 @@ export default function HomePage() {
                                                 placeholder="e.g. executive"
                                                 className="input"
                                             />
-                                            <p className="toggle-hint">
+                                            <p className={`toggle-hint${encryptRole.trim() ? ' toggle-hint-active' : ''}`}>
                                                 Assign this realm role in TideCloak to allow users to encrypt.
                                             </p>
                                         </Toggle>
@@ -770,7 +770,7 @@ export default function HomePage() {
                                                 placeholder="e.g. factoryoperator"
                                                 className="input"
                                             />
-                                            <p className="toggle-hint">
+                                            <p className={`toggle-hint${decryptRole.trim() ? ' toggle-hint-active' : ''}`}>
                                                 Assign this realm role in TideCloak to allow users to decrypt.
                                             </p>
                                         </Toggle>
