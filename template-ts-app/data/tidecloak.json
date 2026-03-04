@@ -1,0 +1,25 @@
+{
+  "realm": "forseti-test",
+  "auth-server-url": "http://localhost:8080",
+  "ssl-required": "external",
+  "resource": "myclient",
+  "public-client": true,
+  "confidential-port": 0,
+  "jwk": {
+    "keys": [
+      {
+        "kid": "52fd-yPJ4k-cGypuPIF0cwxd6KxiJw3zukf1RSJYl2U",
+        "kty": "OKP",
+        "alg": "EdDSA",
+        "use": "sig",
+        "crv": "Ed25519",
+        "x": "ACvMzqyGgBTfTU0OjZMX7840APb5Ew8jBOPYBPgp7ZI"
+      }
+    ]
+  },
+  "vendorId": "919835088977211601897273012954337457479142554361668243357605162308160837526",
+  "backgroundUrl": "http://localhost:8080/realms/forseti-test/tide-idp-resources/images/BACKGROUND_IMAGE",
+  "logoUrl": "http://localhost:8080/realms/forseti-test/tide-idp-resources/images/LOGO",
+  "homeOrkUrl": "https://sork1.tideprotocol.com",
+  "client-origin-auth-http://localhost:3000": "Oz2bqa1EFyCSq1JMIIAQ1aCShUOpjno/TmKqhfU5zJCNWkWNeIaDofl1lHcW6Qeea/nOPE82u2AVEi6PdNJpBg=="
+}

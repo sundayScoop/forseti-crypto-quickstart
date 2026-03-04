@@ -1,0 +1,28 @@
+{
+  "name": "my-forseti-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --webpack",
+    "build": "next build --webpack",
+    "start": "next start",
+    "init": "bash init/tcinit.sh"
+  },
+  "dependencies": {
+    "@tide/js": "file:~/project/tide-js",
+    "@tidecloak/js": "file:~/tidecloak-js/packages/tidecloak-js",
+    "asgard-tide": "0.12.47",
+    "better-sqlite3": "^11.8.1",
+    "heimdall-tide": "file:~/heimdall",
+    "highlight.js": "^11.11.1",
+    "next": "16.x",
+    "react": "19.x",
+    "react-dom": "19.x"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "typescript": "^5"
+  }
+}

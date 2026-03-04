@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//home/sam/tidecloak-js/packages/tidecloak-create-nextjs/**)",
+      "Bash(xargs ls -la)",
+      "Read(//home/sam/**)",
+      "Bash(git mv app template-ts-app/app)",
+      "Bash(git mv components template-ts-app/components)",
+      "Bash(git mv hooks template-ts-app/hooks)",
+      "Bash(git mv lib template-ts-app/lib)",
+      "Bash(git mv public template-ts-app/public)",
+      "Bash(git mv data template-ts-app/data)",
+      "Bash(git mv next.config.ts template-ts-app/next.config.ts)",
+      "Bash(git mv tsconfig.json template-ts-app/tsconfig.json)",
+      "Bash(chmod +x /home/sam/forseti-crypto-quickstart/init/tcinit.sh)",
+      "Bash(chmod +x /home/sam/forseti-crypto-quickstart/template-ts-app/init/tcinit.sh)",
+      "Read(//tmp/forseti-test-app/**)",
+      "Bash(awk -F'`' 'NR==1{found=1; next} /`/{found=0} found{print length}' template-ts-app/lib/forsetiContract.ts)",
+      "Bash(npm install highlight.js)"
+    ],
+    "additionalDirectories": [
+      "/tmp/forseti-test-app"
+    ]
+  }
+}

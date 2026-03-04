@@ -38,7 +38,7 @@ export async function initTcData(): Promise<TidecloakConfig> {
 }
 
 export function getAuthServerUrl(): string {
-    return tcData?.["auth-server-url"] || "";
+    return (tcData?.["auth-server-url"] || "").replace(/\/+$/, "");
 }
 
 export function getRealm(): string {

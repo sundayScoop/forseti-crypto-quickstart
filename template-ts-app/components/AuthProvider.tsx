@@ -2,7 +2,7 @@
 
 import { createContext, useEffect, useState, ReactNode } from "react";
 import { IAMService } from "@tidecloak/js";
-import { Models } from "tide-js";
+import { Models } from "@tide/js";
 const BaseTideRequest = Models.BaseTideRequest;
 import { initTcData } from "@/lib/tidecloakConfig";
 
@@ -47,7 +47,7 @@ export interface AuthContextType {
         denied?: boolean;
         pending?: boolean;
     }[]>;
-    executeTideRequest: (request: Uint8Array) => Promise<Uint8Array[]>;
+    executeTideRequest: (request: Uint8Array, waitForAll?: boolean) => Promise<Uint8Array[]>;
     doEncrypt: (payloads: EncryptPayload[], decryptionPolicy?: Uint8Array | null) => Promise<string[]>;
     doDecrypt: (payloads: DecryptPayload[], decryptionPolicy?: Uint8Array | null) => Promise<(string | Uint8Array)[]>;
     doDraftEncryption: (payloads: DraftEncryptPayload[]) => Promise<Uint8Array>;
@@ -148,8 +148,8 @@ export function AuthProvider({ children }: { children: ReactNode }) {
         });
     };
 
-    const executeTideRequest = async (request: Uint8Array): Promise<Uint8Array[]> => {
-        return await IAMService._tc?.executeSignRequest(request) as any;
+    const executeTideRequest = async (request: Uint8Array, waitForAll: boolean = false): Promise<Uint8Array[]> => {
+        return await IAMService._tc?.executeSignRequest(request, waitForAll) as any;
     };
 
     const doEncrypt = async (payloads: EncryptPayload[], decryptionPolicy?: Uint8Array | null): Promise<string[]> => {

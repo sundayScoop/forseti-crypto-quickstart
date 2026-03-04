@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import type { ReactNode } from 'react'
 import { AuthProvider } from '@/components/AuthProvider'
+import './globals.css'
 
 export const metadata: Metadata = {
     title: 'Forseti Crypto Quickstart',
@@ -14,7 +15,7 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
     return (
         <html lang="en">
-            <body style={{ margin: 0, fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>
+            <body>
                 <AuthProvider>
                     {children}
                 </AuthProvider>
