@@ -17,3 +17,5 @@ npm-debug.log*
 
 # typescript
 *.tsbuildinfo
+
+*.sqlite
