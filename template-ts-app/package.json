@@ -2,6 +2,9 @@
   "name": "my-forseti-app",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=20.9.0"
+  },
   "scripts": {
     "dev": "next dev --webpack",
     "build": "next build --webpack",
@@ -9,11 +12,11 @@
     "init": "bash init/tcinit.sh"
   },
   "dependencies": {
-    "@tide/js": "file:~/project/tide-js",
-    "@tidecloak/js": "file:~/tidecloak-js/packages/tidecloak-js",
+    "@tideorg/js": "0.13.21",
+    "@tidecloak/js": "0.13.21",
     "asgard-tide": "0.12.47",
     "better-sqlite3": "^11.8.1",
-    "heimdall-tide": "file:~/heimdall",
+    "heimdall-tide": "0.13.21",
     "highlight.js": "^11.11.1",
     "next": "16.x",
     "react": "19.x",

@@ -5,7 +5,7 @@ import hljs from 'highlight.js/lib/core';
 import csharp from 'highlight.js/lib/languages/csharp';
 hljs.registerLanguage('csharp', csharp);
 import { IAMService } from "@tidecloak/js";
-import { Models } from "@tide/js";
+import { Models } from "@tideorg/js";
 const Policy = Models.Policy;
 const ExecutionType = Models.ExecutionType;
 const ApprovalType = Models.ApprovalType;

@@ -2,7 +2,7 @@
 
 import { createContext, useEffect, useState, ReactNode } from "react";
 import { IAMService } from "@tidecloak/js";
-import { Models } from "@tide/js";
+import { Models } from "@tideorg/js";
 const BaseTideRequest = Models.BaseTideRequest;
 import { initTcData } from "@/lib/tidecloakConfig";
 
